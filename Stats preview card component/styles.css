@@ -1,21 +1,63 @@
 body {
     background-color: #0a0c1b;
     padding: 0 25px;
+    color: white;
+    font-family: Inter;
 }
 
 .container {
     background-color: #1c1938;
     width: 100%;
     margin: 105px 0;
+    border-radius: 0 0 7px 7px;
 }
 
-.text h1 {
-    padding-top: 85px;
-    margin-top: 0;
+.text {
+    text-align: center;
+    padding: 0 30px;
+}
+
+.text .text-heading {
+    margin-top: 45px;
     margin-bottom: 23px;
+    font-family: Lexend Deca;
+}
+
+.text-heading span {
+    color: #9462b9;
+}
+
+.image {
+    width: 100%;
+    background-image: url('./images/image-header-mobile.jpg');
+    min-height: 240px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px 7px 0 0;
+    mix-blend-mode: soft-light;
+}
+
+.subtext p {
     text-transform: uppercase;
 }
 
-.image img {
-    width: 100%;
+.text p {
+    color: #9c9ab2;
+}
+
+.description {
+    margin-bottom: 50px;
+}
+
+.subtext-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.subtext-wrapper .subtext {
+    margin-bottom: 30px;
+}
+
+.subtext-text {
+    margin-bottom: 0;
 }
