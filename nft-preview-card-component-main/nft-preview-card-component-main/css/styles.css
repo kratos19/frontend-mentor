@@ -1,0 +1,127 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: "Outfit";
+    color: white;
+}
+
+.nft {
+    width: calc(100% - 48px);
+    background-color: #15273f;
+    padding: 24px;
+    border-radius: 15px;
+    margin: 60px auto;
+}
+
+.nft-image img {
+    max-width: 100%;
+    margin: 0 auto 30px auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.nft-heading {
+    margin: 0;
+    cursor: pointer;
+}
+
+.nft-heading:hover {
+    color: #2cfffc;
+}
+
+.nft-description {
+    color: #768eb2;
+    margin-bottom: 24px;
+}
+
+.nft-info {
+    display: flex;
+    margin-bottom: 15px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 15px;
+}
+
+.nft-eth,
+.nft-days {
+    width: 50%;
+}
+
+.nft-days {
+    margin-left: 110px;
+}
+
+.nft-eth p {
+    padding-left: 5px;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    color: #38dbe0;
+    margin: 0;
+}
+
+.nft-days p {
+    padding-left: 5px;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    color: #768eb2;
+    margin: 0;
+}
+
+.nft-author {
+    margin-top: 10px;
+}
+
+.nft-author p {
+    color: #768eb2;
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    margin: 0;
+}
+
+.nft-author p span {
+    color: white;
+    cursor: pointer;
+}
+
+.nft-author img {
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 15px;
+}
+
+@media screen and (min-width: 351px) {
+    .nft {
+        width: 350px;
+    }
+
+    .nft-description {
+        font-size: 18px;
+    }
+
+    .nft-image-wrapper {
+        position: relative;
+    }
+
+    .nft-image-wrapper:hover .nft-overlay {
+        display: block;
+    }
+
+    .nft-overlay {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #0198abba;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .nft-overlay img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
